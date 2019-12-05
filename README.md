@@ -17,10 +17,10 @@
 ```
 
 
-#Prefix sum 
+# Prefix sum 
 
 
-##Serial algorithm 
+## Serial algorithm 
 
 The serial algorithm is pretty easy we just use this formula to calculate the prefix sum array:
 yi = yi − 1 + xi
