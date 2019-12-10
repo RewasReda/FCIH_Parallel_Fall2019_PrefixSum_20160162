@@ -25,7 +25,7 @@ public class ParallelPrefixSum {
 //        int n = 8;
 //        int n = 10;
         int n = 16; // arraysize
-
+//
 //        int InArr[] = new int[]{6,4,16,10,16,14,2,8};
 //        int InArr[] = new int[]{4,9,5,1,0,5,1,6,6,4};
        int InArr[] = new int[]{4,9,5,1,0,5,1,6,6,4,6,5,1,6,9,3};
