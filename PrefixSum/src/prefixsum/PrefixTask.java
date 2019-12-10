@@ -61,7 +61,7 @@ public class PrefixTask implements Runnable{
             {
                 OutArr[j]+=PrefixArr[i];   
             }
-            //endControler.countDown();
+            endControler.countDown();
         }
          
     }
