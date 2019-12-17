@@ -7,6 +7,7 @@ package prefixsum;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -24,11 +25,25 @@ public class ParallelPrefixSum {
         // TODO code application logic here
 //        int n = 8;
 //        int n = 10;
-        int n = 16; // arraysize
+//        int n = 16; // arraysize
 //
 //        int InArr[] = new int[]{6,4,16,10,16,14,2,8};
 //        int InArr[] = new int[]{4,9,5,1,0,5,1,6,6,4};
-       int InArr[] = new int[]{4,9,5,1,0,5,1,6,6,4,6,5,1,6,9,3};
+//       int InArr[] = new int[]{4,9,5,1,0,5,1,6,6,4,6,5,1,6,9,3};
+
+       Scanner sc = new Scanner(System.in); 
+       System.out.println("enter size : ");
+        int n = sc.nextInt(); // arraysize
+       
+         //int InArr[] = new int[]{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+       
+        int InArr[] = new int[n];
+        System.out.println("enter elements : ");
+
+        for(int i=0;i<n;i++){//for reading array
+            InArr[i]=sc.nextInt();
+
+        }
 
        int OutArr[] = new int[n];
         
@@ -48,6 +63,17 @@ public class ParallelPrefixSum {
         
          Date start, end;
          start = new Date();
+        if(n<TNum)
+        {
+            for(int i = 1 ; i<n; i++)
+            {
+                OutArr[i]+=OutArr[i-1]+InArr[i];
+            }
+        }
+        else
+        {
+            
+        
          
     //1st Parallel Version
 
@@ -125,7 +151,7 @@ public class ParallelPrefixSum {
             OutArr[i]=OutArr[i-1]+InArr[i];
         }
         PrefixArr[TNum-1]=OutArr[n-1];
-        
+        }
         
        end = new Date();
        

@@ -12,6 +12,7 @@ package prefixsum;
 import java.lang.Math; 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.*;
 
 
 public class SerialPrefixSum {
@@ -24,10 +25,24 @@ public class SerialPrefixSum {
     public static void main(String[] args) {
         // TODO code application logic here
 //      int n = 16;
-        int n = 16; // arraysize
+//        int n = 16; // arraysize
 
-        int InArr[] = new int[]{4,9,5,1,0,5,1,6,6,4,6,5,1,6,9,3};
+//        int InArr[] = new int[]{4,9,5,1,0,5,1,6,6,4,6,5,1,6,9,3};
         //int InArr[] = new int[]{6,4,16,10,16,14,2,8};
+        
+       Scanner sc = new Scanner(System.in); 
+       System.out.println("enter size : ");
+        int n = sc.nextInt(); // arraysize
+       
+         //int InArr[] = new int[]{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+       
+        int InArr[] = new int[n];
+        System.out.println("enter elements : ");
+
+        for(int i=0;i<n;i++){//for reading array
+            InArr[i]=sc.nextInt();
+
+        }
 
         int OutArr[] = new int[n];
         
