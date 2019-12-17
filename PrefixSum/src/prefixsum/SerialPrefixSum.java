@@ -48,22 +48,32 @@ public class SerialPrefixSum {
         
          double currentTime = 0d;
         
-         Date start, end;
-          start = new Date();
+//         Date start, end;
+         long S , E ;   
+         S = Calendar.getInstance().getTimeInMillis();
+//         start = new Date();
        //Serial Version
       OutArr[0]=InArr[0];
        for(int i = 1 ; i<n; i++)
        {
            OutArr[i]+=OutArr[i-1]+InArr[i];
        }
-       end = new Date();
+//       end = new Date();
        
-       currentTime = end.getTime() - start.getTime();
+       E = Calendar.getInstance().getTimeInMillis();
+//       System.out.println("KKKKKKKKKK");
+//       System.out.println("Start"+S);
+//       System.out.println("End"+E);
+//       System.out.println("KKKKKKKKKK");
+       
+//       currentTime = end.getTime() - start.getTime();
        
       System.out.println(Arrays.toString(InArr));
       System.out.println(Arrays.toString(OutArr));
-      System.out.println("Execution Time: " + (currentTime)
-                + " seconds.");
+      System.out.println("Execution Time "+(E-S) + " milliseconds");
+
+//      System.out.println("Execution Time: " + (currentTime)
+//                + " seconds.");
 
     }
     

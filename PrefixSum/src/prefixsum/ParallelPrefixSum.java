@@ -11,6 +11,7 @@ import java.util.Scanner;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
+import java.util.*;
 
 /**
  *
@@ -61,8 +62,10 @@ public class ParallelPrefixSum {
          
          double currentTime = 0d;
         
-         Date start, end;
-         start = new Date();
+//         Date start, end;
+         long S , E ;   
+         S = Calendar.getInstance().getTimeInMillis();
+//         start = new Date();
         if(n<TNum)
         {
             for(int i = 1 ; i<n; i++)
@@ -153,14 +156,22 @@ public class ParallelPrefixSum {
         PrefixArr[TNum-1]=OutArr[n-1];
         }
         
-       end = new Date();
+//       end = new Date();
+       E = Calendar.getInstance().getTimeInMillis();
+//       System.out.println("KKKKKKKKKK");
+//       System.out.println("Start"+S);
+//       System.out.println("End"+E);
+//       System.out.println("Time"+(E-S));
+//       System.out.println("KKKKKKKKKK");
+//       
        
-       currentTime = end.getTime() - start.getTime();
+//       currentTime = end.getTime() - start.getTime();
       System.out.println(Arrays.toString(InArr));
       System.out.println(Arrays.toString(OutArr));
       System.out.println(Arrays.toString(PrefixArr));
-      System.out.println("Execution Time: " + (currentTime)
-                + " seconds.");
+      System.out.println("Execution Time "+(E-S) + " milliseconds");
+//      System.out.println("Execution Time: " + (currentTime)
+//                + " seconds.");
       executor.shutdown();
 
     }
