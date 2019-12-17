@@ -150,3 +150,13 @@ for(int i = 0 ; i < TNum-1 ; i++)
 That why we have sent the mood attribute to PrefixTask class so it can switch between the 2 moods in the run() method.
 
 
+# OUTPUT
+At N= 100
+![image](https://user-images.githubusercontent.com/48626476/71034938-24037600-2123-11ea-8441-9ef134d5fb77.png)
+
+At N= 1000
+![image](https://user-images.githubusercontent.com/48626476/71035066-62009a00-2123-11ea-987e-fde7a7c9ac1d.png)
+
+At N= 10000
+![image](https://user-images.githubusercontent.com/48626476/71035096-73e23d00-2123-11ea-8731-804da4d54780.png)
+
