@@ -151,12 +151,23 @@ That why we have sent the mood attribute to PrefixTask class so it can switch be
 
 
 # OUTPUT
-At N= 100
-![image](https://user-images.githubusercontent.com/48626476/71034938-24037600-2123-11ea-8441-9ef134d5fb77.png)
+## At N= 100
 
-At N= 1000
-![image](https://user-images.githubusercontent.com/48626476/71035066-62009a00-2123-11ea-987e-fde7a7c9ac1d.png)
+## Serial 
+![100_Serial](https://user-images.githubusercontent.com/48626476/71044768-4903e300-213b-11ea-8a0b-3da912127c57.PNG)
+## Parallel 
+![100_Parallel](https://user-images.githubusercontent.com/48626476/71044770-4b663d00-213b-11ea-8c22-71db8fdf2c5f.PNG)
 
-At N= 10000
-![image](https://user-images.githubusercontent.com/48626476/71035096-73e23d00-2123-11ea-8731-804da4d54780.png)
+## At N= 1000
 
+## Serial 
+![1000_Serial](https://user-images.githubusercontent.com/48626476/71044803-63d65780-213b-11ea-871c-2380e27bc1ea.PNG)
+## Parallel 
+![1000_Parallel](https://user-images.githubusercontent.com/48626476/71044802-633dc100-213b-11ea-98a6-df8513ca9373.PNG)
+
+## At N= 10000
+
+## Serial 
+![10000_Serial](https://user-images.githubusercontent.com/48626476/71044806-63d65780-213b-11ea-8a73-b8de7e5594df.PNG)
+## Parallel 
+![10000_Parallel](https://user-images.githubusercontent.com/48626476/71044805-63d65780-213b-11ea-86a4-ca12b3e8cf44.PNG)
